@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block main %}
+
+<section class="pbt-50 category">
+  <div class="container">
+
+    <div class="row">
+
+      {% for item in itemDetail %}
+
+      <div class="col-xl-6">
+        <h2>{{item.title}}</h2>
+        <h4>${{item.price}} / kg</h4>
+
+        <p class="theme-desc">{{item.description}}</p>
+        <h5 class="pb-2 mb-2">Category: {{item.category}}</h5>
+        <form action="{{url_for('main.cart')}}">
+          <input type="hidden" id="itemdetail_id" name="itemdetail_id" value="{{ item.id }}">
+          <br />
+          <input class="btn btn-primary custom-btn pb-2 mb-4" type="submit" value="Add to Cart">
+        </form>
+      </div>
+      <div class="col-xl-6">
+
+        <div class="desc-img-box">
+          <img src="../static/images/{{item.image}}" class="card-img-top" alt="">
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+
+</section>
+
+{% endblock %}

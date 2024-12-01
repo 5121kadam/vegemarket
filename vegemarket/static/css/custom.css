@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@100;300;400;500;700&display=swap');
+
+body{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+}
+img{
+    max-width: 100%;
+}
+.custom-btn
+{
+    padding: 5px 20px;
+    background-color: #f47777;
+    color: #fff;
+    border-radius: 100px;
+    border-color: #fff;
+    /* text-transform: uppercase; */
+    transition: 1s ease-in-out;
+    font-weight: 500;
+}
+
+.custom-btn:hover{
+    background-color: #000;
+    border-color: #fff;
+}
+
+.custom-nav{
+    color:rgb(255, 255, 255) !important;
+    transition: 0.8s ease-in-out !important;
+}
+
+.custom-nav:hover{
+    color: #140101 !important;
+}
+
+h2.theme-title {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+p.theme-desc {
+    font-size: 18px;
+    font-weight: 400;
+    color: #5f888d;
+}
+
+.img-box.text-center{
+    
+    width: 130px;
+    height: 130px;
+    border-radius: 10px;
+    line-height: 120px;
+    margin: 0 auto;
+}
+
+.pbt-50{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+p.card-text {
+    margin-bottom: 4px;
+    color: black;
+    font-weight: 800;
+}
+
+.card.text-center {
+    padding-top: 15px;
+    background-color: #f47777;
+    border: 1px solid #adadad;
+    border-radius: 62px;
+}
+
+input.form-control.mr-sm-2 {
+    width: 300px;
+}
+
+
+
+header {
+    background-color: #f47777;
+    height: 80px;
+}
+
+.fruit-mainbox .img-box {
+    height: 180px;
+    width: 180px;
+    background-color: #e876191a;
+    padding: 30px;
+    line-height: 110px;
+    margin: 0 auto;
+}
+
+
+.fruit-mainbox {
+    text-align: center;
+}
+
+
+
+label.visually-hidden {
+    width: 215px;
+}
+
+
+.table td, .table th {
+    padding: 0.75rem;
+    vertical-align: middle;
+    border-top: 1px solid #dee2e6;
+}
+
+.cart {
+    border: 1px solid #bdafaf;
+    padding: 30px;
+    border-radius: 43px;
+    background-color: #fbfbfb;
+}
+
+button, input {
+    overflow: visible;
+    border-radius: 9px;
+    /* padding: 5px; */
+    padding-left: inherit;
+}
+
+.footer-main-box .logo-box img {
+    max-width: 180px;
+    margin-bottom: 20px;
+}
+.social-links ul li a {
+    text-decoration: none;
+    color: black;
+    height: 40px;
+    width: 40px;
+    background-color: #e4e4e4;
+    padding: 8px;
+    border-radius: 30px;    
+    display: block;
+    text-align: center;
+}
+.social-links ul {
+    list-style: none;
+    padding: 0;
+}
+.social-links ul li{
+display: inline-block;
+margin-right: 4px;
+}
+.social-links ul li a i {
+    font-size: 18px;
+}
+footer.footer-main {
+    padding: 70px 0px;
+    border-top: 1px solid #eee;
+    background-color: #f47777;
+}
+.footer-main-box .theme-title {
+    font-size: 20px;
+    margin-bottom: 22px;    
+}
+.footer-nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+.footer-nav ul li {
+    margin-bottom: 10px;
+}
+.footer-nav ul li a i{
+    margin-right: 10px;
+}
+.footer-main-box .info-box {
+    position: relative;
+}
+.footer-main-box .info-box i {
+    position: absolute;
+    left: 0;
+    top: 2px;
+    background-color: black;
+    padding: 10px;
+    height: 40px;
+    width: 40px;
+    border-radius: 30px;
+    text-align: center;
+    line-height: 21px;
+    color: #fff;
+}
+.footer-main-box .info-box .theme-description {
+    padding-left: 52px;
+    font-size: 16px;
+    color:white;
+}
+
+.p-md-4 {
+    padding: 1.5rem!important;
+    background-color: rgb(221, 217, 217);
+}
+
+.table td, .table th {
+    padding: 0.75rem;
+    vertical-align: middle;
+    border-top: 1px solid #000000;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-radius: 32.25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+label {
+    display: inline-block;
+    font-weight: 1000;
+    margin-bottom: 0.5rem;
+}
+
+h6.text-muted {
+    font-weight: 1000;
+}
+
+span.card-text {
+    color: black;
+    text-decoration-line: line-through;
+    font-weight: 100;
+}
+
+.inline-social
+{
+    list-style: none !important;
+    display: inline !important;
+}

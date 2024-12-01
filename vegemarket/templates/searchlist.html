@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block main %}
+<section>
+    <div class="container">
+        <br />
+        
+        <div class="row">
+            {% for item in itemlist %}
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                <a href="{{url_for('main.itemdetail',itemid=item.id)}}">
+                    <div class="fruit-mainbox">
+                        <div class="img-box text-center">
+                            <img src="../static/images/{{item.image}}" class="card-img-top" alt="tom">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">{{item.title}}</h5>
+                            <!-- <p class="theme-desc">{{item.description}}h</p> -->
+                            <p class="card-text">$ {{item.price}} / kg</p>
+
+                            <form action="{{url_for('main.cart')}}">
+                                <input type="hidden" id="itemdetail_id" name="itemdetail_id" value="{{ item.id }}">
+                                <br />
+                                <input class="btn btn-primary custom-btn pb-2 mb-4" type="submit" value="Add to Cart">
+                            </form>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endblock %}
